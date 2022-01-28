@@ -17,6 +17,11 @@
     justify-content: space-between;
 }
 
+#menu {
+    display: none;
+
+}
+
 .nav-bar h1 {
     color: #fff;
     padding-left: 20px;
@@ -74,5 +79,62 @@
 }
 
 .main {
-    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.main-square {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+
+
+}
+
+@media screen and (max-width: 456px) {
+    .sidebar {
+        display: none;
+    }
+
+    .ricerca {
+        display: none;
+    }
+
+    #menu {
+        display: inline;
+        padding-right: 30px;
+    }
+
+    .main-square {
+        width: 150px;
+        height: 150px;
+        border-radius: 1px;
+        margin: 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 728px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-square {
+        width: 150px;
+        height: 150px;
+        border-radius: 1px;
+        margin: 10px;
+
+    }
+
+
 }
